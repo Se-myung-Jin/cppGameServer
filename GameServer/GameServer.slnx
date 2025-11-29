@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="DummyClient/DummyClient.vcxproj" Id="99e766e7-948d-41c7-9297-c418d4046f22" />
+  <Project Path="GameServer/GameServer.vcxproj" Id="b8e6d137-8785-4620-a2ce-edd6a9087ba8" />
+  <Project Path="ServerCore/ServerCore.vcxproj" Id="9395a918-145e-4c14-8f13-042deff5713a" />
+</Solution>

@@ -1,41 +1,25 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.vspx
+*.tlog
+*.log
+*.tmp
+ipch/
+Debug/
+Release/
+bin/
+out/ # For CMake-based projects
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
 *.ilk
-
-# Debugger Files
 *.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
-
-# Executables
+*.exp
+*.dll
 *.exe
-*.out
-*.app
+*.vcproj.filters
+*.vcxproj.user
 
-# debug information files
-*.dwo
+# Other common ignored files
+*.~*

@@ -13,6 +13,9 @@
     <Filter Include="Thread">
       <UniqueIdentifier>{a5fdb399-dc51-4ed4-82f1-6dc812b1dcb4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Lock">
+      <UniqueIdentifier>{aa568c1a-9851-4953-8b28-9c797636c99c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CorePch.h">
@@ -36,6 +39,9 @@
     <ClInclude Include="ThreadManager.h">
       <Filter>Thread</Filter>
     </ClInclude>
+    <ClInclude Include="Lock.h">
+      <Filter>Network\Lock</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -52,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="ThreadManager.cpp">
       <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Lock.cpp">
+      <Filter>Network\Lock</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

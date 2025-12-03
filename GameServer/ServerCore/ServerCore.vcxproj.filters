@@ -19,6 +19,9 @@
     <Filter Include="Memory">
       <UniqueIdentifier>{c64355ea-2ccf-49c8-b7b0-22c9e6a1eaf2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Socket">
+      <UniqueIdentifier>{3c9d324f-4dec-4884-9578-dfd8de26b7d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CorePch.h">
@@ -69,6 +72,12 @@
     <ClInclude Include="TypeCast.h">
       <Filter>Memory</Filter>
     </ClInclude>
+    <ClInclude Include="SocketUtils.h">
+      <Filter>Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="NetAddress.h">
+      <Filter>Network</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -103,6 +112,12 @@
     </ClCompile>
     <ClCompile Include="MemoryPool.cpp">
       <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketUtils.cpp">
+      <Filter>Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="NetAddress.cpp">
+      <Filter>Network</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

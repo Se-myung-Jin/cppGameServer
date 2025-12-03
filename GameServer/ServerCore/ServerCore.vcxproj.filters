@@ -22,6 +22,9 @@
     <Filter Include="Network\Socket">
       <UniqueIdentifier>{3c9d324f-4dec-4884-9578-dfd8de26b7d7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Server">
+      <UniqueIdentifier>{bfd678a4-ce72-4224-805b-42b147704949}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CorePch.h">
@@ -78,6 +81,15 @@
     <ClInclude Include="NetAddress.h">
       <Filter>Network</Filter>
     </ClInclude>
+    <ClInclude Include="IocpCore.h">
+      <Filter>Network\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="IocpEvent.h">
+      <Filter>Network\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Listener.h">
+      <Filter>Network\Socket</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -118,6 +130,15 @@
     </ClCompile>
     <ClCompile Include="NetAddress.cpp">
       <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="IocpCore.cpp">
+      <Filter>Network\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="IocpEvent.cpp">
+      <Filter>Network\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Listener.cpp">
+      <Filter>Network\Socket</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

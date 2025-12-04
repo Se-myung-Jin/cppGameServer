@@ -21,3 +21,4 @@ private:
 	HANDLE		_iocpHandle;
 };
 
+extern IocpCore GIocpCore;

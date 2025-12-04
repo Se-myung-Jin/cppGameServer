@@ -1,5 +1,8 @@
 #include "pch.h"
 #include "IocpCore.h"
+#include "IocpEvent.h"
+
+IocpCore GIocpCore;
 
 IocpCore::IocpCore()
 {

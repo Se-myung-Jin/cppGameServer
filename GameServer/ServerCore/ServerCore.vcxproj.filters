@@ -28,6 +28,9 @@
     <Filter Include="Network\Session">
       <UniqueIdentifier>{e62264f3-abd3-4f4e-ad3b-82208f679f50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Service">
+      <UniqueIdentifier>{4cd09d6a-fce0-41fa-8f79-1289b72693a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CorePch.h">
@@ -96,6 +99,9 @@
     <ClInclude Include="Session.h">
       <Filter>Network\Session</Filter>
     </ClInclude>
+    <ClInclude Include="Service.h">
+      <Filter>Network\Service</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -148,6 +154,9 @@
     </ClCompile>
     <ClCompile Include="Session.cpp">
       <Filter>Network\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>Network\Service</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

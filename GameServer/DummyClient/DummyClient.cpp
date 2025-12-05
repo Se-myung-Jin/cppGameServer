@@ -20,6 +20,8 @@ public:
 		SendBufferRef sendBuffer = GSendBufferManager->Open(4096);
 		::memcpy(sendBuffer->Buffer(), sendData, sizeof(sendData));
 		sendBuffer->Close(sizeof(sendData));
+
+		Send(sendBuffer);
 	}
 
 	virtual int32 OnRecv(BYTE* buffer, int32 len) override
@@ -31,6 +33,8 @@ public:
 		SendBufferRef sendBuffer = GSendBufferManager->Open(4096);
 		::memcpy(sendBuffer->Buffer(), sendData, sizeof(sendData));
 		sendBuffer->Close(sizeof(sendData));
+
+		Send(sendBuffer);
 
 		return len;
 	}

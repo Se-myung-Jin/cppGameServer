@@ -111,6 +111,9 @@
     <ClInclude Include="SendBuffer.h">
       <Filter>Network\Buffer</Filter>
     </ClInclude>
+    <ClInclude Include="PacketSession.h">
+      <Filter>Network\Session</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -172,6 +175,9 @@
     </ClCompile>
     <ClCompile Include="SendBuffer.cpp">
       <Filter>Network\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketSession.cpp">
+      <Filter>Network\Session</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

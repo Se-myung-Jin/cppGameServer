@@ -17,9 +17,9 @@ public:
 	{
 		cout << "Connected To Server" << endl;
 
-		SendBufferRef sendBuffer = MakeShared<SendBuffer>(4096);
-		sendBuffer->CopyData(sendData, sizeof(sendData));
-		Send(sendBuffer);
+		SendBufferRef sendBuffer = GSendBufferManager->Open(4096);
+		::memcpy(sendBuffer->Buffer(), sendData, sizeof(sendData));
+		sendBuffer->Close(sizeof(sendData));
 	}
 
 	virtual int32 OnRecv(BYTE* buffer, int32 len) override
@@ -28,9 +28,9 @@ public:
 
 		Sleep(1000);
 
-		SendBufferRef sendBuffer = MakeShared<SendBuffer>(4096);
-		sendBuffer->CopyData(sendData, sizeof(sendData));
-		Send(sendBuffer);
+		SendBufferRef sendBuffer = GSendBufferManager->Open(4096);
+		::memcpy(sendBuffer->Buffer(), sendData, sizeof(sendData));
+		sendBuffer->Close(sizeof(sendData));
 
 		return len;
 	}

@@ -12,6 +12,9 @@
 #include <unordered_set>
 using namespace std;
 
+template<typename Type, uint32 Size>
+using Array = array<Type, Size>;
+
 template<typename Type>
 using Vector = vector<Type, StlAllocator<Type>>;
 

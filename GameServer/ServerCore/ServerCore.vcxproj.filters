@@ -114,6 +114,12 @@
     <ClInclude Include="PacketSession.h">
       <Filter>Network\Session</Filter>
     </ClInclude>
+    <ClInclude Include="BufferReader.h">
+      <Filter>Network\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferWriter.h">
+      <Filter>Network\Buffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -178,6 +184,12 @@
     </ClCompile>
     <ClCompile Include="PacketSession.cpp">
       <Filter>Network\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferReader.cpp">
+      <Filter>Network\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferWriter.cpp">
+      <Filter>Network\Buffer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -8,7 +8,7 @@ public:
 	BufferWriter(BYTE* buffer, uint32 size, uint32 pos = 0);
 	~BufferWriter();
 
-	BYTE* Buffer() { return _buffer; }
+	BYTE*			Buffer() { return _buffer; }
 	uint32			Size() { return _size; }
 	uint32			WriteSize() { return _pos; }
 	uint32			FreeSize() { return _size - _pos; }
@@ -44,17 +44,10 @@ T* BufferWriter::Reserve()
 }
 
 template<typename T>
-BufferWriter& BufferWriter::operator<<(const T& src)
-{
-	*reinterpret_cast<T*>(&_buffer[_pos]) = src;
-	_pos += sizeof(T);
-	return *this;
-}
-
-template<typename T>
 BufferWriter& BufferWriter::operator<<(T&& src)
 {
-	*reinterpret_cast<T*>(&_buffer[_pos]) = std::move(src);
+	using DataType = std::remove_reference_t<T>;
+	*reinterpret_cast<DataType*>(&_buffer[_pos]) = std::forward<DataType>(src);
 	_pos += sizeof(T);
 	return *this;
 }

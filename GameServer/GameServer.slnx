@@ -1,8 +1,15 @@
 <Solution>
   <Configurations>
+    <Platform Name="Any CPU" />
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/Tools/">
+    <Project Path="Tools/PacketGenerator/PacketGenerator.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="9c13efcc-b800-4b8a-9bbc-c157380bce1c">
+      <Platform Project="AnyCPU" />
+      <Build Project="false" />
+    </Project>
+  </Folder>
   <Project Path="DummyClient/DummyClient.vcxproj" Id="99e766e7-948d-41c7-9297-c418d4046f22" />
   <Project Path="GameServer/GameServer.vcxproj" Id="b8e6d137-8785-4620-a2ce-edd6a9087ba8" />
   <Project Path="ServerCore/ServerCore.vcxproj" Id="9395a918-145e-4c14-8f13-042deff5713a" />

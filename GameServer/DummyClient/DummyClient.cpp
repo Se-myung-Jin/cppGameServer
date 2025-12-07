@@ -2,6 +2,7 @@
 #include "ThreadManager.h"
 #include "Service.h"
 #include "Session.h"
+#include "PacketSession.h"
 #include "BufferReader.h"
 #include "ClientPacketHandler.h"
 

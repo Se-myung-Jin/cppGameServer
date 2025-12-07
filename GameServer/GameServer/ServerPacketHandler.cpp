@@ -2,7 +2,6 @@
 #include "ServerPacketHandler.h"
 #include "BufferReader.h"
 #include "BufferWriter.h"
-#include "PacketSession.h"
 
 void ServerPacketHandler::HandlePacket(BYTE* buffer, int32 len)
 {
@@ -18,27 +17,7 @@ void ServerPacketHandler::HandlePacket(BYTE* buffer, int32 len)
 	}
 }
 
-SendBufferRef ServerPacketHandler::Make_S_TEST(uint64 id, uint32 hp, uint16 attack, vector<BuffData> buffs)
+SendBufferRef ServerPacketHandler::MakeSendBuffer(Protocol::S_TEST& pkt)
 {
-	SendBufferRef sendBuffer = GSendBufferManager->Open(4096);
-
-	BufferWriter bw(sendBuffer->Buffer(), sendBuffer->AllocSize());
-
-	PacketHeader* header = bw.Reserve<PacketHeader>();
-	// id(uint64), 체력(uint32), 공격력(uint16)
-	bw << id << hp << attack;
-
-	// 가변 데이터
-	bw << (uint16)buffs.size();
-	for (BuffData& buff : buffs)
-	{
-		bw << buff.buffId << buff.remainTime;
-	}
-
-	header->size = bw.WriteSize();
-	header->id = S_TEST; // 1 : Test Msg
-
-	sendBuffer->Close(bw.WriteSize());
-
-	return sendBuffer;
+	return _MakeSendBuffer(pkt, S_TEST);
 }

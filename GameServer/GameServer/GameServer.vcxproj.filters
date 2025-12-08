@@ -10,6 +10,15 @@
     <Filter Include="Protocol">
       <UniqueIdentifier>{89ad914b-5a59-4523-8b4f-5f3faf46a89f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{80e18ef3-6faa-43cd-b2f4-39df3cdaeed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player">
+      <UniqueIdentifier>{2e64d472-e352-46f7-be94-c317f62d4381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Room">
+      <UniqueIdentifier>{bb9c48cb-0be3-4bde-98cc-20a8b75373e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -36,6 +45,12 @@
     <ClCompile Include="Struct.pb.cc">
       <Filter>Protocol</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Contents\Room</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -58,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="Struct.pb.h">
       <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Contents\Room</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

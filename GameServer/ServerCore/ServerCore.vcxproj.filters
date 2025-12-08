@@ -34,6 +34,9 @@
     <Filter Include="Network\Buffer">
       <UniqueIdentifier>{86c524c6-028b-4138-96b3-b853419ad8c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Job">
+      <UniqueIdentifier>{92db91fb-b4bf-4b43-ba1a-71ea41b49b78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CorePch.h">
@@ -120,6 +123,18 @@
     <ClInclude Include="BufferWriter.h">
       <Filter>Network\Buffer</Filter>
     </ClInclude>
+    <ClInclude Include="Job.h">
+      <Filter>Network\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="JobQueue.h">
+      <Filter>Network\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="LockQueue.h">
+      <Filter>Network\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalQueue.h">
+      <Filter>Network\Job</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -190,6 +205,18 @@
     </ClCompile>
     <ClCompile Include="BufferWriter.cpp">
       <Filter>Network\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Job.cpp">
+      <Filter>Network\Job</Filter>
+    </ClCompile>
+    <ClCompile Include="JobQueue.cpp">
+      <Filter>Network\Job</Filter>
+    </ClCompile>
+    <ClCompile Include="LockQueue.cpp">
+      <Filter>Network\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalQueue.cpp">
+      <Filter>Network\Job</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

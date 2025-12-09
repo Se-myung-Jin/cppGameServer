@@ -5,3 +5,4 @@ extern class Memory*			GMemory;
 extern class SendBufferManager* GSendBufferManager;
 
 extern class DBConnectionPool*	GDBConnectionPool;
+extern class DeadLockProfiler*	GDeadLockProfiler;

@@ -135,6 +135,9 @@
     <ClInclude Include="GlobalQueue.h">
       <Filter>Network\Job</Filter>
     </ClInclude>
+    <ClInclude Include="JobTimer.h">
+      <Filter>Network\Job</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CorePch.cpp">
@@ -216,6 +219,9 @@
       <Filter>Network\Lock</Filter>
     </ClCompile>
     <ClCompile Include="GlobalQueue.cpp">
+      <Filter>Network\Job</Filter>
+    </ClCompile>
+    <ClCompile Include="JobTimer.cpp">
       <Filter>Network\Job</Filter>
     </ClCompile>
   </ItemGroup>
